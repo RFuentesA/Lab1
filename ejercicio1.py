@@ -10,18 +10,26 @@ min = 0
 for i in range(n):
   if valores[i] > max:
     max = valores[i]
-    
+
 x = max
-for j in range(len(valores)):
+for j in range(n):
   if valores[j] < x:
     min = valores[j]
     x = valores[j]
   else:
     min = x
 
+suma = 0
+for h in range(n):
+  suma += valores[h]
+
+promedio = suma/len(valores)
+
 
 print("El valor maximo es: ", str(max))
 print("El valor minimo es: ", str(min))
+print("La suma de todos los valores es: ", suma)
+print("El promedio es: ", promedio)
 
 
 
