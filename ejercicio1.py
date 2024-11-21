@@ -10,6 +10,15 @@ for i in range(len(valores)):
   if valores[i] > max:
     max = valores[i]
 print("El valor maximo es: ", str(max))
+
+min = 0
+for i in range(len(valores)):
+  if valores[i] < min:
+    min = valores[i]
+print("El valor maximo es: ", str(min))
+
+
+
    
 
 
