@@ -8,8 +8,8 @@ intentosFallidos = 0
 
 #Logica de acceso
 for fallido in range(3):
-    usuario = input("Ingrese su usuario ")
-    contraseña = input("Ingrese su contraseña ")
+    usuario = input("Ingrese su usuario: ")
+    contraseña = input("Ingrese su contraseña: ")
     if usuario not in listaUsuarios and contraseña not in listaUsuarios:
         intentosFallidos += 1
         if intentosFallidos == 3:
